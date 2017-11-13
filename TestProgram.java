@@ -25,6 +25,7 @@ public class TestProgram{
           if (checkBeforeWritefile(file)){
             FileWriter filewriter = new FileWriter(file, true);
             filewriter.write(z);
+            filewriter.write(z);
             filewriter.close();
           }else{
             System.out.println("ファイルに書き込めません");

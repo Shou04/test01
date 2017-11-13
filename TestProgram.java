@@ -13,8 +13,8 @@ public class TestProgram{
 
         z        = String.valueOf(x+y)+"\n";
         //filename = "c:/jenkins_plugin_workspase/test/"+args[0]+".txt";
-        //filename = "c:/jenkins_plugin_workspase/test/data_test.txt";
-        filename = "https://github.com/Shou04/test01.git/data_test.txt";
+        filename = "c:/jenkins_plugin_workspase/test/data_test.txt";
+        System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         try{
           File file = new File(filename);
           try{

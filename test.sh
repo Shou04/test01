@@ -4,3 +4,4 @@ java TestProgram ver02 test02 abcdefghijkl
 java TestProgram ver03 test03 abcdefghijklnopqrstu
 java TestProgram ver04 test04 abcdnopqrstu
 java TestProgram ver05 test05 aijklmnopqrstu
+java TestProgram ver06 test05 aijklmnopqrstu

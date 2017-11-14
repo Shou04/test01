@@ -12,9 +12,9 @@ public class TestProgram{
         String filename = null;
 
         z        = String.valueOf(x+y)+"\n";
-        //filename = "c:/jenkins_plugin_workspase/test/"+args[0]+".txt";
-        filename = "c:/jenkins_plugin_workspase/test/data_test.txt";
-        System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        filename = "c:/jenkins_plugin_workspase/test/"+args[0]+".txt";
+        //filename = "c:/jenkins_plugin_workspase/test/data_test.txt";
+
         try{
           File file = new File(filename);
           try{
@@ -27,6 +27,7 @@ public class TestProgram{
             FileWriter filewriter = new FileWriter(file, true);
             filewriter.write(z);
             filewriter.write(z);
+            filewriter.write("aaaaaaaaaaaaaaaaaaaaaaaaaaaa");
             filewriter.close();
           }else{
             System.out.println("ファイルに書き込めません");

@@ -11,10 +11,8 @@ public class TestProgram{
         String z = null;
         String filename = null;
 
-        z        = String.valueOf(x+y)+"\n";
         filename = "c:/jenkins_plugin_workspase/test/"+args[0]+".txt";
         //filename = "c:/jenkins_plugin_workspase/test/data_test.txt";
-
 
         try{
           File file = new File(filename);
@@ -26,7 +24,8 @@ public class TestProgram{
 
           if (checkBeforeWritefile(file)){
             FileWriter filewriter = new FileWriter(file, true);
-            filename = filename + "\n";
+            filename = args[0]+".txt" + "\n";
+            z        = String.valueOf(x+y)+"\n";
             filewriter.write(filename);
             filewriter.write(z);
 

@@ -1,0 +1,6 @@
+c:/jenkins_plugin_workspase/test/test01.txt
+10
+c:/jenkins_plugin_workspase/test/test01.txt
+10
+c:/jenkins_plugin_workspase/test/test01.txt
+10

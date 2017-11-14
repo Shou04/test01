@@ -25,7 +25,7 @@ public class TestProgram{
           if (checkBeforeWritefile(file)){
             FileWriter filewriter = new FileWriter(file, true);
             filename = args[0]+".txt" + "\n";
-            z        = String.valueOf(x+y)+"\n";
+            z        = String.valueOf(args[1])+"\n";
             filewriter.write(filename);
             filewriter.write(z);
 

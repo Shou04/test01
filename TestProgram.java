@@ -10,9 +10,16 @@ public class TestProgram{
         int    y = 3;
         String z = null;
         String filename = null;
+        String dirname  = null;
 
-        filename = "c:/jenkins_plugin_workspase/test/"+args[0]+".txt";
+        MakeDir makeD = new MakeDir();
+
+        dirname  = "c:/jenkins_plugin_workspase/Data/" + args[0];
+        filename = dirname+ "/" + args[1] + ".txt";
+
         //filename = "c:/jenkins_plugin_workspase/test/data_test.txt";
+
+        makeD.makeDir(dirname); //新しいディレクトリを作成
 
         try{
           File file = new File(filename);
@@ -25,7 +32,8 @@ public class TestProgram{
           if (checkBeforeWritefile(file)){
             FileWriter filewriter = new FileWriter(file, true);
             filename = args[0]+".txt" + "\n";
-            z        = String.valueOf(args[1])+"\n";
+            z        = String.valueOf(args[2])+"\n";
+
             filewriter.write(filename);
             filewriter.write(z);
 
@@ -36,6 +44,7 @@ public class TestProgram{
         }catch(IOException e){
           System.out.println(e);
         }
+        
     }
 
     private static boolean checkBeforeWritefile(File file){
@@ -44,5 +53,4 @@ public class TestProgram{
       }
       return false;
     }
-
 }

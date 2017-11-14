@@ -15,6 +15,7 @@ public class TestProgram{
         filename = "c:/jenkins_plugin_workspase/test/"+args[0]+".txt";
         //filename = "c:/jenkins_plugin_workspase/test/data_test.txt";
 
+
         try{
           File file = new File(filename);
           try{

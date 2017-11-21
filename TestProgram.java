@@ -23,6 +23,7 @@ public class TestProgram{
 
         while(true){
           x = 1;
+          y = 2;
         }
 
         // try{

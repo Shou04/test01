@@ -21,30 +21,34 @@ public class TestProgram{
 
         makeD.makeDir(dirname); //新しいディレクトリを作成
 
-        try{
-          File file = new File(filename);
-          try{
-              file.createNewFile();
-          }catch(IOException e){
-              System.out.println(e);
-          }
-
-          if (checkBeforeWritefile(file)){
-            FileWriter filewriter = new FileWriter(file, true);
-
-            z    = String.valueOf(args[2])+"\n";
-            time = String.valueOf(zd)+"\n";
-
-            filewriter.write(time);
-            filewriter.write(z);
-
-            filewriter.close();
-          }else{
-            System.out.println("ファイルに書き込めません");
-          }
-        }catch(IOException e){
-          System.out.println(e);
+        while(true){
+          x = 1;
         }
+
+        // try{
+        //   File file = new File(filename);
+        //   try{
+        //       file.createNewFile();
+        //   }catch(IOException e){
+        //       System.out.println(e);
+        //   }
+        //
+        //   if (checkBeforeWritefile(file)){
+        //     FileWriter filewriter = new FileWriter(file, true);
+        //
+        //     z    = String.valueOf(args[2])+"\n";
+        //     time = String.valueOf(zd)+"\n";
+        //
+        //     filewriter.write(time);
+        //     filewriter.write(z);
+        //
+        //     filewriter.close();
+        //   }else{
+        //     System.out.println("ファイルに書き込めません");
+        //   }
+        // }catch(IOException e){
+        //   System.out.println(e);
+        // }
 
     }
 
